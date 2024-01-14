@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text overflow</title>
+    <style>
+        .box{
+            width: 40vw;
+            height: 40vh;
+            border: 1px solid red;
+        }
+        .flexible-container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .fixed{
+            /* overflow-y: hidden; */
+            /* overflow-y: scroll; */
+            /* overflow: scroll; */
+            /* overflow-y: visible; */
+            /* overflow-y: auto; */
+            /* overflow-x: hidden; */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+  <div class="flexible-container">  
+        <div class="flexbox">
+            <h1>
+                This is a overflow issue
+            </h1>
+            <div class="box">
+                <h2>this is paragraph 1</h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ut itaque voluptates consequatur est iusto dolore neque sapiente fugiat in, incidunt pariatur aliquam inventore labore ab eligendi quas assumenda odit perspiciatis. Aliquam inventore quisquam dolorum voluptate nobis, harum corporis id officia blanditiis fuga soluta animi est aut nemo quis fugit magnam doloremque ducimus. Dignissimos nisi harum eligendi, ad deserunt unde in voluptates soluta facilis neque amet debitis explicabo obcaecati, quisquam et libero sint repellat similique id numquam. Doloribus dolores facere odio repudiandae nisi cum! Eaque maxime sed necessitatibus iusto vitae nobis ex beatae, illum corporis dolores facere. Beatae suscipit, aut incidunt error corporis labore quisquam et corrupti asperiores esse. Amet fugit tempore quia dolorum molestiae reiciendis eum voluptatibus repellendus, velit voluptas sint? Nobis, dolorem alias reiciendis numquam dolore blanditiis ratione accusantium! Doloremque, magnam exercitationem dolores consectetur rem cupiditate labore amet hic deleniti assumenda veniam sit explicabo error veritatis totam eum eveniet eaque architecto a atque suscipit! Quia tenetur explicabo, et dolor veniam possimus delectus laudantium dicta eos perferendis hic accusantium aperiam atque obcaecati officia maiores praesentium vitae nisi nemo nulla saepe. Veritatis corporis consequuntur saepe incidunt suscipit, labore aperiam sed in enim minima inventore animi ipsum voluptatem facere aliquid quis?
+    
+            </div>
+        
+            <div class="box">
+                <h2>second paragraph</h2>
+                Repellendus praesentium voluptatum odio obcaecati, aspernatur tempore dicta recusandae expedita? Saepe qui eius delectus eaque assumenda hic et. Ipsam, corporis sed consectetur earum labore temporibus dolorum aliquam. Sequi, reiciendis consequuntur commodi earum nam reprehenderit molestias delectus optio facere corrupti dignissimos ipsam! Quam vel quod veniam laudantium ut ducimus. Culpa fugit tempora sit facilis unde. Velit consequatur saepe repudiandae officiis voluptatibus, iure debitis reiciendis tempore ex unde, inventore nulla eum deleniti quae, quis optio fugiat! Enim deleniti alias officiis impedit, itaque explicabo tempore consequuntur nam, obcaecati id laboriosam. Deleniti adipisci minima tempora quia ab voluptas illum, libero reiciendis quasi necessitatibus voluptates veniam molestiae beatae esse facere enim numquam! Ullam eaque, corporis quo consequatur beatae necessitatibus quod deserunt ad non in veritatis atque aut aperiam, officiis at! Aliquid incidunt necessitatibus nisi quos facere quasi mollitia aut quaerat magnam fugiat ipsa cupiditate accusamus sint, provident possimus atque, quidem obcaecati adipisci? Repudiandae, cupiditate inventore. Repellat accusantium facere animi, modi temporibus magni iste sequi labore sint illum veniam eos soluta nihil? Temporibus tempore minus autem tenetur eum vitae, labore, excepturi saepe eveniet, eos provident. Beatae enim perspiciatis, quaerat illo provident laborum illum sequi sed mollitia quidem? Nostrum, suscipit accusantium eum doloremque necessitatibus odio laboriosam molestias?
+            </div>
+        </div>
+
+    
+        <div class="flexbox">
+            <h1>This is a fixed overflow</h1>
+            <div class="box fixed">
+                <h2>this is paragraph 1</h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ut itaque voluptates consequatur est iusto dolore neque sapiente fugiat in, incidunt pariatur aliquam inventore labore ab eligendi quas assumenda odit perspiciatis. Aliquam inventore quisquam dolorum voluptate nobis, harum corporis id officia blanditiis fuga soluta animi est aut nemo quis fugit magnam doloremque ducimus. Dignissimos nisi harum eligendi, ad deserunt unde in voluptates soluta facilis neque amet debitis explicabo obcaecati, quisquam et libero sint repellat similique id numquam. Doloribus dolores facere odio repudiandae nisi cum! Eaque maxime sed necessitatibus iusto vitae nobis ex beatae, illum corporis dolores facere. Beatae suscipit, aut incidunt error corporis labore quisquam et corrupti asperiores esse. Amet fugit tempore quia dolorum molestiae reiciendis eum voluptatibus repellendus, velit voluptas sint? Nobis, dolorem alias reiciendis numquam dolore blanditiis ratione accusantium! Doloremque, magnam exercitationem dolores consectetur rem cupiditate labore amet hic deleniti assumenda veniam sit explicabo error veritatis totam eum eveniet eaque architecto a atque suscipit! Quia tenetur explicabo, et dolor veniam possimus delectus laudantium dicta eos perferendis hic accusantium aperiam atque obcaecati officia maiores praesentium vitae nisi nemo nulla saepe. Veritatis corporis consequuntur saepe incidunt suscipit, labore aperiam sed in enim minima inventore animi ipsum voluptatem facere aliquid quis?
+    
+            </div>
+        
+            <div class="box fixed">
+                <h2>second paragraph</h2>
+                Repellendus praesentium voluptatum odio obcaecati, aspernatur tempore dicta recusandae expedita? Saepe qui eius delectus eaque assumenda hic et. Ipsam, corporis sed consectetur earum labore temporibus dolorum aliquam. Sequi, reiciendis consequuntur commodi earum nam reprehenderit molestias delectus optio facere corrupti dignissimos ipsam! Quam vel quod veniam laudantium ut ducimus. Culpa fugit tempora sit facilis unde. Velit consequatur saepe repudiandae officiis voluptatibus, iure debitis reiciendis tempore ex unde, inventore nulla eum deleniti quae, quis optio fugiat! Enim deleniti alias officiis impedit, itaque explicabo tempore consequuntur nam, obcaecati id laboriosam. Deleniti adipisci minima tempora quia ab voluptas illum, libero reiciendis quasi necessitatibus voluptates veniam molestiae beatae esse facere enim numquam! Ullam eaque, corporis quo consequatur beatae necessitatibus quod deserunt ad non in veritatis atque aut aperiam, officiis at! Aliquid incidunt necessitatibus nisi quos facere quasi mollitia aut quaerat magnam fugiat ipsa cupiditate accusamus sint, provident possimus atque, quidem obcaecati adipisci? Repudiandae, cupiditate inventore. Repellat accusantium facere animi, modi temporibus magni iste sequi labore sint illum veniam eos soluta nihil? Temporibus tempore minus autem tenetur eum vitae, labore, excepturi saepe eveniet, eos provident. Beatae enim perspiciatis, quaerat illo provident laborum illum sequi sed mollitia quidem? Nostrum, suscipit accusantium eum doloremque necessitatibus odio laboriosam molestias?
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
